@@ -3,7 +3,12 @@
     {
       "key": "ae2f8c8f1b19a06d348c",
       "color": "#E8D252",
-      "name": "Work"
+      "name": "Log"
+    },
+    {
+      "key": "63276b9a8a5e1a4eaab3",
+      "color": "#30D5C8",
+      "name": "Ideas"
     }
   ],
   "version": "1.0"

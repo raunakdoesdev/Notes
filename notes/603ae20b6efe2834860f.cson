@@ -16,9 +16,9 @@ content: '''
   -rw-rw-r-- 1 schowdhuri schowdhuri 2.8M May 10 13:38 epoch_save_4.0.00472525949612
   ```
   
-   It's probably some error in the modified training code. So I'm going to sit down and compare my new training code to the old one line by line to see if I messed anything up.
+  It's probably some error in the modified training code. So I'm going to sit down and compare my new training code to the old one line by line to see if I messed anything up.
 '''
 tags: []
 isStarred: false
 createdAt: "2017-05-11T00:41:11.411Z"
-updatedAt: "2017-05-11T00:45:55.269Z"
+updatedAt: "2017-05-11T00:49:20.083Z"
