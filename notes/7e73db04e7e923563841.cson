@@ -1,0 +1,29 @@
+type: "MARKDOWN_NOTE"
+folder: "ae2f8c8f1b19a06d348c"
+title: "Daily Todo List 5/11/17"
+content: '''
+  # Daily Todo List 5/11/17
+  ## Personal Research
+  - [x] Switch networks to use adam optimizer
+  - [x] Stop current metadata net from training
+  - [ ] Debug metadata network why isn't the loss changing
+  ## Tasks for Others
+  - [x] Check emails in Work
+  - [x] Get the following information for Blythe (write a script to get the info):
+  > 1. Yes, WiFi antenna is highly recommended but the "ifconfig" command on target should show the wlan0 entry nevertheless.
+  > 2. Follow WiFi section in the user guide: https://github.com/ATLFlight/ATLFlightDocs/blob/master/UserGuide.md#wifi-control​
+  > 3. Try the following on target:
+  > * ifdown wlan0
+  > * ifup eth0
+  > * ifconfig
+  > 4. Verify WiFi firmware on target
+  > * Check whether the following directory exists on target: /lib/firmware/ath6k/AR6004/hw3.0/
+  > * Provide the output of this cmd on target: ls -l /lib/firmware/ath6k/AR6004/hw3.0/
+  > * Provide the output of this cmd on target: ls -l /mnt/modem/image/*.bin
+  > 5. If nothing else works, then they need to reflash the platform image from here: https://support.intrinsyc.com/projects/snapdragon-flight/wiki/Get_and_install_the_latest_platform_BSP
+  - [x] Get Karl info about how much time each layer takes to run in PyTorch on the TX2 (need to write some code in the forward function for Z2BatchNorm)
+'''
+tags: []
+isStarred: false
+createdAt: "2017-05-12T00:15:39.694Z"
+updatedAt: "2017-05-12T02:07:52.644Z"
