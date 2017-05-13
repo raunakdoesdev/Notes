@@ -1,7 +1,3 @@
-type: "MARKDOWN_NOTE"
-folder: "63276b9a8a5e1a4eaab3"
-title: "Dual Network Metadata Inference"
-content: '''
   # Dual Network Metadata Inference
   
   ## Expectations
@@ -30,9 +26,3 @@ content: '''
   ## Why SqueezeNet?
   
   SqueezeNet was chosen for a couple of reasons. The ImageNet problem is remarkably similar to the metadata inference problem, in both situations, you need to analyze different segments of the image and come to an understanding of what is in the image (stop sign or red light translates to stop mode), GPS next turn left and a stoplight translates to a left + lane change, and then a stop soon after, etc. We also need the network to be extremely fast and able to run on our model cars. The network that fits these characteristics is very clearly SqueezeNet.
-  
-'''
-tags: []
-isStarred: false
-createdAt: "2017-05-11T01:07:16.098Z"
-updatedAt: "2017-05-12T00:16:03.888Z"

@@ -1,7 +1,4 @@
-type: "MARKDOWN_NOTE"
-folder: "3fa47587280747ef5f73"
-title: "Double Net Training Issues"
-content: '''
+
   # Double Net Training Issues
   
   Started training my network with SqueezeNet computing the metadata from two input images, and then feeding this data to a pretrained model of Z2Color in evaluate mode. The goal was to have SqueezeNet able to infer metadata completely. Unfortuantely I ran into a training error where each epoch has extremely similar validation error and the squeeze net is not learning anything.
@@ -17,9 +14,5 @@ content: '''
   ```
   
   It's probably some error in the modified training code. So I'm going to sit down and compare my new training code to the old one line by line to see if I messed anything up.
+
   **ISSUE SOLVED IN DAILY LOG 5/12/17 (Creation of new metadata variable is breaking the backpropagation chain and isn't optimizing anything)**
-'''
-tags: []
-isStarred: false
-createdAt: "2017-05-13T00:59:29.402Z"
-updatedAt: "2017-05-13T00:59:31.150Z"
