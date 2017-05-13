@@ -3,17 +3,19 @@ folder: "ae2f8c8f1b19a06d348c"
 title: "Daily Log 5/12/17"
 content: '''
   # Daily Log 5/12/17
-  ## 
+  ## Findings
+  - Camera processing is taking a toal of about 0.14 seconds out of the 0.15 seconds it takes to run the network on an input image. Out of this conversion from numpy to PyTorch is taking about 0.10 seconds. If we could optimize this conversion it would allow us to run much larger networks on the TX2.
   ## TODOs
   ### Metadata Inference
   - [ ] Autograd isn't working since I am creating a new tensor based on values from squeezenet, same tensor should be going through the system. Post on PyTorch forums to see how you can create something to do this with backpropagation enabled.
   - [ ] Implement Transfer Learning with SqueezeNet
   ### NVIDIA
-  - [ ] Figure out what part of the camera processing is taking so long and report detailed timing statistics to Karl (my guess is conversion from numpy to pytorch tensor)
+  - [x] Figure out what part of the camera processing is taking so long and report detailed timing statistics to Karl (my guess is conversion from numpy to pytorch tensor)
+  - [ ] Email Dustin to find out how to optimize input from ZED Depth Camera for PyTorch Implementation
   ### Qualcomm
   - [x] Email Karl about time sink through the Snapdragon Board
 '''
 tags: []
 isStarred: false
 createdAt: "2017-05-13T00:04:30.108Z"
-updatedAt: "2017-05-13T00:12:48.590Z"
+updatedAt: "2017-05-13T01:00:47.841Z"
