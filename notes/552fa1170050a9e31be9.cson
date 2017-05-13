@@ -11,11 +11,11 @@ content: '''
   - [ ] Implement Transfer Learning with SqueezeNet
   ### NVIDIA
   - [x] Figure out what part of the camera processing is taking so long and report detailed timing statistics to Karl (my guess is conversion from numpy to pytorch tensor)
-  - [ ] Email Dustin to find out how to optimize input from ZED Depth Camera for PyTorch Implementation
+  - [x] Email Dustin to find out how to optimize input from ZED Depth Camera for PyTorch Implementation
   ### Qualcomm
   - [x] Email Karl about time sink through the Snapdragon Board
 '''
 tags: []
 isStarred: false
 createdAt: "2017-05-13T00:04:30.108Z"
-updatedAt: "2017-05-13T01:00:47.841Z"
+updatedAt: "2017-05-13T01:21:34.767Z"
