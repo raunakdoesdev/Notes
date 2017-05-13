@@ -1,0 +1,19 @@
+type: "MARKDOWN_NOTE"
+folder: "ae2f8c8f1b19a06d348c"
+title: "Daily Log 5/12/17"
+content: '''
+  # Daily Log 5/12/17
+  ## 
+  ## TODOs
+  ### Metadata Inference
+  - [ ] Autograd isn't working since I am creating a new tensor based on values from squeezenet, same tensor should be going through the system. Post on PyTorch forums to see how you can create something to do this with backpropagation enabled.
+  - [ ] Implement Transfer Learning with SqueezeNet
+  ### NVIDIA
+  - [ ] Figure out what part of the camera processing is taking so long and report detailed timing statistics to Karl (my guess is conversion from numpy to pytorch tensor)
+  ### Qualcomm
+  - [x] Email Karl about time sink through the Snapdragon Board
+'''
+tags: []
+isStarred: false
+createdAt: "2017-05-13T00:04:30.108Z"
+updatedAt: "2017-05-13T00:12:48.590Z"

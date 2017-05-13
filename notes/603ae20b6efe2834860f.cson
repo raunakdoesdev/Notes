@@ -17,8 +17,9 @@ content: '''
   ```
   
   It's probably some error in the modified training code. So I'm going to sit down and compare my new training code to the old one line by line to see if I messed anything up.
+  **ISSUE SOLVED IN DAILY LOG 5/12/17 (Creation of new metadata variable is breaking the backpropagation chain and isn't optimizing anything)**
 '''
 tags: []
 isStarred: false
 createdAt: "2017-05-11T00:41:11.411Z"
-updatedAt: "2017-05-11T00:49:20.083Z"
+updatedAt: "2017-05-13T00:11:28.060Z"

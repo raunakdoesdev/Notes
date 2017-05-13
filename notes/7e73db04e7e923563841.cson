@@ -1,14 +1,15 @@
 type: "MARKDOWN_NOTE"
 folder: "ae2f8c8f1b19a06d348c"
-title: "Daily Todo List 5/11/17"
+title: "Daily Log 5/11/17"
 content: '''
-  # Daily Todo List 5/11/17
+  # Daily Log 5/11/17
   ## Personal Research
   - [x] Switch networks to use adam optimizer
   - [x] Stop current metadata net from training
   - [ ] Debug metadata network why isn't the loss changing
   ## Tasks for Others
   - [x] Check emails in Work
+  - [ ] Log hours
   - [x] Get the following information for Blythe (write a script to get the info):
   > 1. Yes, WiFi antenna is highly recommended but the "ifconfig" command on target should show the wlan0 entry nevertheless.
   > 2. Follow WiFi section in the user guide: https://github.com/ATLFlight/ATLFlightDocs/blob/master/UserGuide.md#wifi-control​
@@ -26,4 +27,4 @@ content: '''
 tags: []
 isStarred: false
 createdAt: "2017-05-12T00:15:39.694Z"
-updatedAt: "2017-05-12T02:07:52.644Z"
+updatedAt: "2017-05-13T00:04:51.585Z"
