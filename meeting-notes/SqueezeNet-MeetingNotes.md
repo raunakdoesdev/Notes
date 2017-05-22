@@ -1,8 +1,12 @@
 # SqueezeNet Meeting Topics and Ideas
 
+## Replacing Z2Color w/ SqueezeNet
+
+AlexNet has been proven to be good at the regression task, since SqueezeNet can match AlexNet's performance in classification it might have the same characteristics and we could replace SqueezeNet with Z2Color as our driving network. This has already been implemented and we've been getting [fairly good results](https://github.com/sauhaardac/Notes/blob/master/daily-logs/5-14-17.md#replacing-z2color-with-squeezenet-as-the-drive-network).
+
 ## Metadata Inference
 
-![metadata inference training pipeline](Metadata_Inference.png)
+![metadata inference training pipeline](https://github.com/sauhaardac/Notes/raw/master/meeting-notes/Metadata_Inference.png)
 
 #### Stage 1 Training (Training the Driving/SafetyNet Network)
 
@@ -18,6 +22,25 @@ One of the things to include in SqueezeNet would be temporal expansion. By givin
 
 Although this is not end to end learning, it allows for visibility into the networks to see what they are doing and why [(a big problem) w/ end to end learning for self driving cars](https://www.technologyreview.com/s/604087/the-dark-secret-at-the-heart-of-ai/?set=604130). People need to know what to blame if something goes wrong. A metadata pipeline, with different jobs delegated to different networks is great for this.
 
-## Replacing Z2Color w/ SqueezeNet
 
-AlexNet has been proven to be good at the regression task, since SqueezeNet can match AlexNet's performance in classification it might have the same characteristics and we could replace SqueezeNet with Z2Color as our driving network. This has already been implemented and we've been getting [fairly good results](https://github.com/sauhaardac/Notes/blob/master/daily-logs/5-14-17.md#replacing-z2color-with-squeezenet-as-the-drive-network).
+## Results So Far
+|Epoch #|Z2Color DriveNet Human Metadata|SqueezeNet DriveNet Human Metadata|Z2Color DriveNet SqueezeNet Metadata Inference|
+|-------|-------------------------------|----------------------------------|----------------------------------------------|
+|0      | 0.00452417655113              | 0.00440285224422                 | 0.00436432782963                             |                         
+|1      | 0.00424008385675              | 0.00394989686521                 | 0.00433086923284                             |                         
+|2      | 0.00426339135854              | 0.00393838632672                 | 0.00434070564745                             |                         
+|3      | 0.00433390245223              | 0.00382325120834                 |                                              |
+|4      | 0.00412601164384              | 0.00377298341532                 |                                              |
+|5      | 0.00416927167706              | 0.00375450990366                 |                                              |
+|6      | 0.00404781217583              | 0.00380503319684                 |                                              |
+|7      | 0.00433781656343              | 0.00378889732598                 |                                              |
+|8      | 0.00445202851025              | 0.00374546955016                 |                                              |
+|9      | 0.00410790514151              |                                  |                                              | 
+
+## Preliminary Questions
+
+- In order to advance with this research it seems temporal expansion of the SqueezeNet network will become importaint/neccessary. Where in the network do you suggest adding a GRU or an LSTM to optimize results?
+- What advice can you give us for employing SqueezeNet as our main drive network?
+- What advice can you give us for adopting Metadata Inference with SqueezeNet?
+- Do you think it's a good idea, if we contine with metadata inference, to switch bot our drive network and the metadata inference network to SqueezeNet?
+
