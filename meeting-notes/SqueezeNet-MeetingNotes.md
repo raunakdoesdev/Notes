@@ -23,19 +23,20 @@ One of the things to include in SqueezeNet would be temporal expansion. By givin
 Although this is not end to end learning, it allows for visibility into the networks to see what they are doing and why [(a big problem) w/ end to end learning for self driving cars](https://www.technologyreview.com/s/604087/the-dark-secret-at-the-heart-of-ai/?set=604130). People need to know what to blame if something goes wrong. A metadata pipeline, with different jobs delegated to different networks is great for this.
 
 
-## Results So Far
+## Results So Far (MSE Loss [Average Error Squared])
 |Epoch #|Z2Color DriveNet Human Metadata|SqueezeNet DriveNet Human Metadata|Z2Color DriveNet SqueezeNet Metadata Inference|
 |-------|-------------------------------|----------------------------------|----------------------------------------------|
 |0      | 0.00452417655113              | 0.00440285224422                 | 0.00436432782963                             |                         
 |1      | 0.00424008385675              | 0.00394989686521                 | 0.00433086923284                             |                         
 |2      | 0.00426339135854              | 0.00393838632672                 | 0.00434070564745                             |                         
-|3      | 0.00433390245223              | 0.00382325120834                 |                                              |
+|3      | 0.00433390245223              | 0.00382325120834                 | 0.00435018637669                             |
 |4      | 0.00412601164384              | 0.00377298341532                 |                                              |
 |5      | 0.00416927167706              | 0.00375450990366                 |                                              |
 |6      | 0.00404781217583              | 0.00380503319684                 |                                              |
 |7      | 0.00433781656343              | 0.00378889732598                 |                                              |
 |8      | 0.00445202851025              | 0.00374546955016                 |                                              |
-|9      | 0.00410790514151              |                                  |                                              | 
+|9      | 0.00410790514151              | 0.00370437949589                 |                                              | 
+
 
 ## Preliminary Questions
 
