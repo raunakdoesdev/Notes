@@ -14,6 +14,7 @@ By training a single network to have different behavioral modes based on input i
 - The variance of the motor values in direct mode of the network clearly increase as the network is trained.
 - The network commonly exhibits speed modulation behavior in appropriate circumstances when tested in direct mode on the street. (Show examples of network stopping in front of obstacle directly in front of it)
 - Future data collection note, it may be interesting to compare the number of neurons that fire when the network is run in the two seperate modes on the same input, it may show some sort of increased correlation over time (demonstrating the network learns to associate things from both modes)
+
 **Will obv. include graphs and stuff showing this data, but don't have all the data yet.**
 ## Analysis
 - This suggests that as the network is trained more, useful behaviors tend to seep between behavioral modes as the network makes associations about it's environment.
