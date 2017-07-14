@@ -1,3 +1,5 @@
+
+
 ```python
 import pandas as pd
 import numpy as np
@@ -41,7 +43,7 @@ print(directfollow.head(5))
 # motor value magnitude. Steering values are scaled to -0.5 to 0.5
 # and are then abs() to get the magnitude of steering.
 
-plt.plot(direct['Output Motor'], (direct['Human Steer'] - 0.5).abs(), 'ro')
+plt.plot(direct['Output Motor'], (direct['Output Steer'] - 0.5).abs(), 'ro')
 print(stats.linregress(direct['Output Motor'], (direct['Output Steer'] - 0.5).abs()).rvalue)
 plt.title('Steering Extremity vs. Motor Output Direct Mode')
 plt.xlabel('Direct Mode Training Motor Output (0.5 = stop, 1 = full speed)')
